@@ -9,6 +9,7 @@
         <module name="eureka-client" />
         <module name="eureka-client1" />
         <module name="eureka-server" />
+        <module name="ribbon-server" />
         <module name="studySpringCloud" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-client1" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="ribbon-server" options="-parameters" />
       <module name="studySpringCloud" options="-parameters" />
     </option>
   </component>
