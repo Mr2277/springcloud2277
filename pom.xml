@@ -18,7 +18,9 @@
 
     <modules>
         <module>eureka-server</module>
-       <!-- <module>service-hi</module> -->
+         <module>eureka-client</module>
+        <module>eureka-client1</module>
+        <module>ribbon-server</module>
     </modules>
 
     <properties>
@@ -33,6 +35,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+
+        <!-- MySQL 连接驱动依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
+        </dependency>
+
+        <!-- Spring Boot Mybatis 依赖 -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 
