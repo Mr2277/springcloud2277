@@ -1,35 +1,37 @@
 package com.eureka.client.eurekaclient.bean;
 
-import java.sql.Date;
+import org.springframework.stereotype.Component;
 
+import java.sql.Date;
+@Component
 public class Sale {
-   private Date YMD;
-   private String  REGION;
-   private String FORMATS;
-   private String STORES;
-   private String STORENAME;
-   private String  BILL;
-   private String VIPID;
-   private String  VIP_AGE;
-   private String VIP_SEX;
-   private String SHOPID;
-   private String SHOPNAME;
-   private String  DEPTID;
-   private String DEPTNAME;
-   private String  CLASSID3;
-   private String NAME_CLASS3;
-   private String CLASSID4;
-   private String NAME_CLASS4;
-   private String  CLASSID5;
-   private String NAME_CLASS5;
-   private String STANDARDS;
-   private String UNIT_SALE;
-   private String TIME_DEF;
-   private String PRICE_COM ;
-   private String PRICE_MUST;
-   private String PRICE_SALECHG;
-   private String NUM_SALE;
-   private String VALUE_SALE;
-   private String VALUE_SALE_AFTERDISC;
-   private String ISRTN;
+   public Date YMD;
+   public String  REGION;
+   public String FORMATS;
+   public String STORES;
+   public String STORENAME;
+   public String  BILL;
+   public String VIPID;
+   public String  VIP_AGE;
+   public String VIP_SEX;
+   public String SHOPID;
+   public String SHOPNAME;
+   public String  DEPTID;
+   public String DEPTNAME;
+   public String  CLASSID3;
+   public String NAME_CLASS3;
+   public String CLASSID4;
+   public String NAME_CLASS4;
+   public String  CLASSID5;
+   public String NAME_CLASS5;
+   public String STANDARDS;
+   public String UNIT_SALE;
+   public String TIME_DEF;
+   public String PRICE_COM ;
+   public String PRICE_MUST;
+   public String PRICE_SALECHG;
+   public String NUM_SALE;
+   public String VALUE_SALE;
+   public String VALUE_SALE_AFTERDISC;
+   public String ISRTN;
 }

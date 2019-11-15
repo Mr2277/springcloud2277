@@ -1,5 +1,6 @@
 package com.eureka.client.eurekaclient.service.imp;
 
+import com.eureka.client.eurekaclient.bean.Sale;
 import com.eureka.client.eurekaclient.dao.SaleDao;
 import com.eureka.client.eurekaclient.service.SaleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,11 @@ public class SaleServiceImp implements SaleService {
     @Override
     public String test() {
         return "test";
+    }
+
+    @Override
+    public Sale findByVIP(String VIPID, String YMD) {
+        return saleDao.findByName(VIPID, YMD);
     }
 
 }
