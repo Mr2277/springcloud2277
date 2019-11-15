@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/sale")
 public class SaleController {
@@ -19,8 +21,11 @@ public class SaleController {
     @RequestMapping("/findSale")
     public Sale findSale(@RequestParam("VIPID") String VIPID,@RequestParam("YMD") String YMD){
         Sale sale=serviceImp.findByVIP(VIPID, YMD);
-        System.out.println(sale.BILL);
         return sale;
+    }
+    @RequestMapping("/findSaleList")
+    public List<Sale> findSaleList(@RequestParam("VIPID") String VIPID){
+        return serviceImp.findManySale(VIPID);
     }
 
 }

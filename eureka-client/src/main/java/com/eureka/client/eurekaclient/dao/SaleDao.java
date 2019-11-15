@@ -3,6 +3,8 @@ import com.eureka.client.eurekaclient.bean.Sale;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 //@Mapper
 @Repository
 public interface SaleDao {
@@ -40,4 +42,6 @@ public interface SaleDao {
 
     })
     Sale findByName(@Param("VIPID") String VIPID,@Param("YMD") String YMD);
+    @Select("select * from sale where VIPID =#{VIPID}")
+    List<Sale>findListSale(@Param("VIPID")String VIPID);
 }
