@@ -1,9 +1,8 @@
 package com.eureka.client1.eurekaclient1.service.imp;
 
-import com.eureka.client.eurekaclient.bean.Sale;
-import com.eureka.client.eurekaclient.dao.SaleDao;
-import com.eureka.client.eurekaclient.service.SaleService;
 import com.eureka.client1.eurekaclient1.bean.Sale;
+import com.eureka.client1.eurekaclient1.dao.SaleDao;
+import com.eureka.client1.eurekaclient1.service.SaleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
