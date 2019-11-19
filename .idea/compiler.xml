@@ -11,8 +11,12 @@
         <module name="eureka-server" />
         <module name="ribbon-server" />
         <module name="studySpringCloud" />
+        <module name="xjsp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tml" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,6 +25,8 @@
       <module name="eureka-server" options="-parameters" />
       <module name="ribbon-server" options="-parameters" />
       <module name="studySpringCloud" options="-parameters" />
+      <module name="tml" options="-parameters" />
+      <module name="xjsp" options="-parameters" />
     </option>
   </component>
 </project>

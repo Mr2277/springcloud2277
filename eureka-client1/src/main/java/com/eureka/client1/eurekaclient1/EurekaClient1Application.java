@@ -1,5 +1,6 @@
 package com.eureka.client1.eurekaclient1;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
+@MapperScan(basePackages ="com.eureka.client1.eurekaclient1.dao")
+
 public class EurekaClient1Application {
 
     public static void main(String[] args) {

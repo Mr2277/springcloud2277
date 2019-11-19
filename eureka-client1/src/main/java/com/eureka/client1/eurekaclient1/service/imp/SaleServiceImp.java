@@ -18,6 +18,7 @@ public class SaleServiceImp implements SaleService {
         return "test";
     }
 
+    @Override
     public Sale findByVIP(String VIPID, String YMD) {
         return saleDao.findByName(VIPID, YMD);
     }
