@@ -44,4 +44,6 @@ public interface SaleDao {
     Sale findByName(@Param("VIPID") String VIPID,@Param("YMD") String YMD);
     @Select("select * from sale where VIPID =#{VIPID}")
     List<Sale>findListSale(@Param("VIPID")String VIPID);
+    @Select("select * from sale where BILL=#{BILL}")
+    List<Sale>findListByBill(@Param("BILL") String BILL);
 }

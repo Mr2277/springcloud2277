@@ -27,5 +27,9 @@ public class SaleController {
     public List<Sale> findSaleList(@RequestParam("VIPID") String VIPID){
         return serviceImp.findManySale(VIPID);
     }
+    @RequestMapping("/findByBill")
+    public List<?>findByBill(@RequestParam("BILL") String BILL){
+        return  serviceImp.findByBill(BILL);
+    }
 
 }

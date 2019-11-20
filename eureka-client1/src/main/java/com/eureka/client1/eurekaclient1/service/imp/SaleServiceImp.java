@@ -28,4 +28,9 @@ public class SaleServiceImp implements SaleService {
         return saleDao.findListSale(VIPID);
     }
 
+    @Override
+    public List<Sale> findByBill(String bill) {
+        return saleDao.findListByBill(bill);
+    }
+
 }

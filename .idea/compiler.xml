@@ -16,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="tml" target="1.8" />
+      <module name="xjsp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

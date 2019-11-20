@@ -8,4 +8,5 @@ public interface SaleService {
     String test();
     Sale findByVIP(String VIPID, String YMD);
     List<Sale>findManySale(String VIPID);
+    List<Sale>findByBill(String bill);
 }

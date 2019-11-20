@@ -1,19 +1,24 @@
 package com.ribbon.server.ribbonserver.controller;
 
+import com.eureka.client.eurekaclient.bean.Sale;
 import com.ribbon.server.ribbonserver.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+import java.util.List;
 
+@RestController
+@RequestMapping("/sale")
 public class HelloControler {
     @Autowired
     HelloService helloService;
 
-    @GetMapping(value = "/hi")
-    public String hi(@RequestParam String name) {
-        return helloService.hiService( name );
+    @RequestMapping (value = "/findByBill")
+    public List<Sale> hi(@RequestParam("BILL") String BILL) {
+        System.out.println("fffffff");
+        return helloService.hiService( BILL );
     }
 }
