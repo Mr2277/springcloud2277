@@ -1,6 +1,6 @@
 package com.ribbon.server.ribbonserver.controller;
 
-import com.eureka.client.eurekaclient.bean.Sale;
+import com.ribbon.server.ribbonserver.bean.Sale;
 import com.ribbon.server.ribbonserver.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

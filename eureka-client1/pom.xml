@@ -7,23 +7,27 @@
     <artifactId>eureka-client1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureka-client1</name>
+    <packaging>jar</packaging>
+
     <description>Demo project for Spring Boot</description>
 
     <parent>
         <groupId>com.springcloud</groupId>
         <artifactId>com.springcloud</artifactId>
         <version>1.0-SNAPSHOT</version>
-
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.0.3.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.0.5.RELEASE</version>
         </dependency>
         <!-- Spring Boot Mybatis 依赖 -->
         <dependency>
@@ -38,6 +42,21 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.eureka.client1.eurekaclient1.EurekaClient1Application</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

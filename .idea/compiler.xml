@@ -10,8 +10,6 @@
         <module name="eureka-client1" />
         <module name="eureka-server" />
         <module name="ribbon-server" />
-        <module name="studySpringCloud" />
-        <module name="xjsp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,7 +23,7 @@
       <module name="eureka-client1" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="ribbon-server" options="-parameters" />
-      <module name="studySpringCloud" options="-parameters" />
+      <module name="studySpringCloud" options="" />
       <module name="tml" options="-parameters" />
       <module name="xjsp" options="-parameters" />
     </option>
