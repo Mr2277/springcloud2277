@@ -18,7 +18,6 @@ public class HelloControler {
 
     @RequestMapping (value = "/findByBill")
     public List<Sale> hi(@RequestParam("BILL") String BILL) {
-        System.out.println("fffffff");
         return helloService.hiService( BILL );
     }
 }

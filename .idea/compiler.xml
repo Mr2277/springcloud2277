@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client" />
         <module name="eureka-client1" />
+        <module name="eureka-redis" />
         <module name="eureka-server" />
         <module name="ribbon-server" />
       </profile>
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-client1" options="-parameters" />
+      <module name="eureka-redis" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="ribbon-server" options="-parameters" />
       <module name="studySpringCloud" options="" />

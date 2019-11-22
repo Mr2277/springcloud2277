@@ -19,10 +19,10 @@ public class RibbonServerApplication {
     public static ApplicationContext context;
 
     public static void main(String[] args) {
-        context=new  SpringApplicationBuilder(RibbonServerApplication.class).web(true).run(args);
+        //context=new  SpringApplicationBuilder(RibbonServerApplication.class).web(true).run(args);
         //springClientFactory=context.getBean(SpringClientFactory.class);
         //ribbonLoadBalancerClient=context.getBean(RibbonLoadBalancerClient.class);
-        //SpringApplication.run(RibbonServerApplication.class, args);
+        SpringApplication.run(RibbonServerApplication.class, args);
        // ApplicationContext context=new Spring
     }
     @Bean
