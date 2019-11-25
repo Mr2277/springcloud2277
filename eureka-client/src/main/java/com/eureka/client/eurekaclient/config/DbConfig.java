@@ -11,6 +11,9 @@ public class DbConfig {
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
     public DruidDataSource druidDataSource(){
+        DruidDataSource dataSource=new DruidDataSource();
+        dataSource.setMaxActive(100000);
+        dataSource.setInitialSize(100000);
         return new DruidDataSource();
     }
 
