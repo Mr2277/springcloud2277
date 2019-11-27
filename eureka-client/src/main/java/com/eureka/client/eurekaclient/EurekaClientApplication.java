@@ -36,6 +36,7 @@ public class EurekaClientApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
          System.out.println(dataSource.getClass().getName());
+
          System.out.println("DATASOURCE="+dataSource);
     }
 }

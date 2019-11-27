@@ -29,6 +29,7 @@ public class SaleController {
     }
     @RequestMapping("/findByBill")
     public List<?>findByBill(@RequestParam("BILL") String BILL){
+        //return null;
         return  serviceImp.findByBill(BILL);
     }
 
