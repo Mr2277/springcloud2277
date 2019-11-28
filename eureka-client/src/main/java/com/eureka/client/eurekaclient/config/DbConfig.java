@@ -1,7 +1,6 @@
 package com.eureka.client.eurekaclient.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -11,20 +10,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.Servlet;
+import javax.sql.DataSource;
 
 @Configuration
 public class DbConfig {
-
+   /*
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
-    public DruidDataSource druidDataSource(){
-        DruidDataSource dataSource=new DruidDataSource();
-        //dataSource.setInitialSize(5000);
-       // System.out.println(dataSource.get);
-        //dataSource.setMaxActive(100000);
-        //dataSource.setInitialSize(100000);
-        return dataSource;
+    public DataSource druidDataSource() {
+        return new DruidDataSource();
     }
+     */
     @Bean
     public ServletRegistrationBean statViewServlet() {
         //创建servlet注册实体
