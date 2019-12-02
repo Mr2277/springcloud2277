@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/ribbon-server/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-redis/pom.xml" />
         <option value="$PROJECT_DIR$/eureke-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-rocketmq/pom.xml" />
       </list>
     </option>
   </component>

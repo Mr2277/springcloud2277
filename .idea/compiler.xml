@@ -9,6 +9,7 @@
         <module name="eureka-client" />
         <module name="eureka-client1" />
         <module name="eureka-redis" />
+        <module name="eureka-rocketmq" />
         <module name="eureka-server" />
         <module name="eureke-druid" />
         <module name="ribbon-server" />
@@ -24,6 +25,7 @@
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-client1" options="-parameters" />
       <module name="eureka-redis" options="-parameters" />
+      <module name="eureka-rocketmq" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eureke-druid" options="-parameters" />
       <module name="ribbon-server" options="-parameters" />
